@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0" > 
+        <title>Projects | Ji-Create</title>
+    </head>
+
+    <style>
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #5b2b82, #2d1b4f);
+            color: #fff;
+            line-height: 1.6;
+        }
+     .main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            padding: 0 40px;
+            background: none;
+            backdrop-filter: blur(10px);
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: center;
+            z-index: 1000;
+        }
+        .brand {
+            font-size: 24px;
+            color: #fff;
+            margin: 0;
+            justify-self: start;
+        }
+        .main-nav {
+            display: flex;
+            justify-content: center;
+            gap: 28px;
+        }
+        .main-nav a {
+            color: #d1d1d1;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        .main-nav a:hover {
+            color: #4da3ff;
+        }
+        .contact-btn {
+            justify-self: end;
+            padding: 10px 22px;
+            background: #4da3ff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 15px;
+            transition: background 0.3s ease;
+        }
+        .contact-btn:hover {
+            background: #1f7ae0;
+        }
+
+        .projects-hero {
+            padding: 100px 40px;
+            text-align: center;
+        }
+        .projects-hero h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        .projects-hero p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 18px;
+            color: #d1d1d1;
+            line-height: 1.8;
+        }
+        /* Featured Project section */
+        .featured-project {
+            padding: 80px 40px 100px;
+        }
+        .project-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 70px 60px;
+            border-radius: 20px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+        }
+        .project-status {
+            display: inline-block;
+            background: rgba(77, 163, 255, 0.15);
+            color: #4da3ff;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+        .project-content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .project-description {
+            font-size: 19px;
+            color: #d1d1d1;
+            margin-bottom: 30px;
+        }
+        .project-story p {
+            color: #d1d1d1;
+            font-size: 17px;
+            line-height: 1.9;
+            margin-bottom: 20px;
+        }
+        .project-features {
+            margin-top: 40px;
+        }
+        .project-features h3 {
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+        .project-features ul {
+            list-style: none;
+        }
+        .project-features li {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 14px 18px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            font-size: 16px;
+            color: #d1d1d1;
+        }
+        .project-cta {
+            margin-top: 40px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .primary-btn,
+        .secondary-btn {
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        .primary-btn {
+            background: #4da3ff;
+            color: #fff;
+        }
+        .primary-btn:hover {
+            background: powderblue;
+        }
+        .secondary-btn {
+            border: 1px solid #4da3ff;
+            color: #4da3ff;
+        }
+        .secondary-btn:hover {
+            background: #4da3ff;
+            color: #fff;
+        }
+         /* footer */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.35);
+            color: #d1d1d1;
+            font-size: 14px;
+            margin-top: 80px;
+        }
+
+        @media (max-width: 600px) {
+            .brand {
+                font-size: 20px;
+            }
+            .main-nav {
+                gap: 16px;
+            }
+        }
+    </style>
+    <script src="script.js"></script>
+    <body>
+        
+        <header class="main-header">
+            <h1 class="brand">Ji-Create</h1>
+            <nav class="main-nav">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#">Projects</a>
+            </nav>
+
+            <a href="#contact" class="contact-btn">Contact</a>
+        </header>
+        <section class="projects-hero">
+            <h2>What we are building</h2>
+            <p>
+            At Ji-Create, we don’t just ship ideas, we build products that
+            empower creatives, unlock opportunities, and redefine how value
+            is created in the creative economy.
+            </p>
+        </section>
+        <section class="feature-project">
+            <div class="project-content">
+               
+                <span class="project-status">In Progress</span>
+                
+                <h2>Ji-Create Platform</h2>
+
+                <p class="project-description">
+                Ji-Create is a creative economy platform designed to help artists,
+                creators, and cultural innovators monetize their craft through
+                storytelling, live engagement, and direct access to their audience.
+                </p>
+                
+                <div class="project-story">
+                    <p>
+                    On Ji-Create, creatives are more than content producers, they
+                    are brands. Artists can sell their art and crafts alongside the
+                    stories behind them, connect with fans through live streaming,
+                    and earn directly from their talent.
+                    </p>
+
+                    <p>
+                    With built-in backend tools, creators gain access to audience
+                    insights, performance tracking, and monetization analytics,
+                    giving them full control over their creative business.
+                    </p>
+                </div>
+                <!-- features -->
+                 <div class="project-features">
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Sell art, crafts,tickets and digital creations with storytelling</li>
+                        <li>Live streaming for performances and fan engagement</li>
+                        <li>Artist discovery and promotion by event organizers</li>
+                        <li>Merchandise sales and fan support</li>
+                        <li>Creator dashboard with audience & revenue tracking</li>
+                    </ul>
+                 </div>
+
+                 <div class="project-cta">
+                    <a href="#" class="primary-btn">Join as Creator</a>
+                    <a href="#" class="secondary-btn">Become a Partner</a>
+                 </div>
+            </div>
+        </section>
+        <footer>
+            <p>© 2025 Ji-Create. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
